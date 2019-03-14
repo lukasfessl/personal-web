@@ -4,6 +4,13 @@ body {
 	margin: 0px;
 }
 
+ul {
+	list-style: none;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+}
+
 .page {
     position: absolute;
     overflow: hidden;
@@ -39,11 +46,10 @@ body {
 }
 
 .header {
-	width: 100px;
-    height: 500px;
+    width: 75px;
     position: absolute;
-    top: 0px;
-    left: -580px;
+    top: 20px;
+    left: -540px;
 }
 
 .card-left {
@@ -75,4 +81,45 @@ body {
     border: 1px solid black;
     margin: 20px;
     float: right;
+}
+
+
+.top-menu ul li a {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    height: 52px;
+    color: #171717;
+    text-align: center;
+    background: #ffffff;
+    padding-top: 20px;
+    text-decoration: none;
+    -webkit-transition: color 0.3s ease 0s;
+}
+
+.top-menu .link {
+	display: block;
+	padding: 5px;
+}
+
+.top-menu ul li a:hover {
+    color: #78cc6d;
+}
+
+.header .top-menu ul li:first-child a {
+	border-radius: 4px 4px 0 0;
+}
+
+.header .top-menu ul li:last-child a {
+	border-radius: 0 0 4px 4px;
+}
+
+.header .top-menu ul li a:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: radial-gradient(ellipse at right, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
 }

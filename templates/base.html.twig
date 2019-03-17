@@ -3,13 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}Lukáš Fessl{% endblock %}</title>
+        <link rel="shortcut icon" href="{{ asset('img/favicon.png') }}" type="image/x-icon">
 		<link rel="stylesheet" href="{{ asset('css/style.css') }}" />
 		<link rel="stylesheet" href="{{ asset('css/font-awesome.css') }}" />
         {% block stylesheets %}{% endblock %}
         <script src="{{ asset('js/jquery.js') }}"></script>
         <script src="{{ asset('js/custom.js') }}"></script>
         <script src="{{ asset('js/jquery.slimscroll.min.js') }}"></script>
-        <link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet">
         {% block javascripts %}{% endblock %}
     </head>
     <body>

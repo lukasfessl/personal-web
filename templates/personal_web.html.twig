@@ -151,14 +151,12 @@
     					<div class="row">
         					<div class="col col-12 border-line-v">
         						<div class="content-items">
-        							<div class="item border-line-h active">
-        								<div class="date">2019</div>
-        								<div class="name">xxx</div>
-        							</div>
-        							<div class="item border-line-h active">
-        								<div class="date">2018</div>
-        								<div class="name">xxx</div>
-        							</div>
+        							{% for post in runList %}
+    									<div class="item {% if not loop.last %}border-line-h{% endif %} {% if loop.first %}active{% endif %}">
+            								<div class="date">{{ post.name }}</div>
+            								<div class="name">{{ post.text|nl2br }}</div>
+            							</div>
+        							{% endfor %}
         						</div>
         					</div>
     					</div>

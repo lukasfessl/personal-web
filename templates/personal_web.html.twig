@@ -2,6 +2,19 @@
 
 {% block content %}
 <div class="background gradient">
+	<ul class="bg-bubbles">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+
 	<div class="container">
 
 			<div class="header">
@@ -40,23 +53,114 @@
 				</div>
 			</div>
 
-
 			<div class="card-right">
-				<div class="content card" id="card-about">
-					<!-- title -->
-					<div class="title">About Me</div>
-						XXX
+				<div class="content card" id="card-about" style="display: none">
+					<div class="slim-div">
+    					<div class="row">
+        					<div class="col col-12">
+        						<div class="title">O mně</div>
+        					</div>
+    					</div>
+    					<div class="row bot-space">
+    						<div class="col col-12">
+            					<div class="border-line-v">
+            						xxx
+            					</div>
+        					</div>
+    					</div>
+
+    					<div class="row">
+    						<div class="col col-12 ">
+    							<div class="title">Resume</div>
+    						</div>
+    					</div>
+    					<div class="row bot-space">
+        					<div class="col col-6 border-line-v">
+        						<div class="title margin">Zkušenosti</div>
+        						<div class="content-items">
+        							<div class="item border-line-h active">
+        								<div class="date">2014 - Současnost</div>
+        								<div class="company">Orchitech</div>
+        								<div class="name">Developer</div>
+        								<p> shord description</p>
+        							</div>
+        						</div>
+        						<div class="content-items">
+        							<div class="item border-line-h active">
+        								<div class="date">2012 - 2014</div>
+        								<div class="company">Agentes IT</div>
+        								<div class="name">Junior developer</div>
+        								<p> shord description</p>
+        							</div>
+        						</div>
+        					</div>
+
+        					<div class="col col-6 border-line-v">
+        						<div class="title margin">Vzdělání</div>
+        						<div class="content-items">
+        							<div class="item border-line-h">
+        								<div class="date">2012 - 2017</div>
+        								<div class="name">
+            								Jihočeská univerzita,
+            								Přírodovědecká fakulta,
+            								Aplikovaná informatika (Mgr.),
+        									České Budějovice, Branišovská 1160/31
+    								</div>
+        							</div>
+        						</div>
+        						<div class="content-items">
+        							<div class="item border-line-h">
+        								<div class="date">2009 - 2012</div>
+        								<div class="name">
+    										Jihočeská univerzita,
+    										Přírodovědecká fakulta,
+    										Aplikovaná informatika (Bc.),
+    										České Budějovice, Branišovská 1160/31
+                                        </div>
+        							</div>
+        						</div>
+        						<div class="content-items">
+        							<div class="item border-line-h">
+        								<div class="date">2004-2009</div>
+        								<div class="name">
+        										Střední průmyslová škola strojní a elektrotechnická,
+        										elektrotechnika,
+                                        		České Budějovice, Dukelská 13
+                                        </div>
+        							</div>
+        						</div>
+        					</div>
+    					</div>
+					</div>
 				</div>
 
-				<div class="content card" id="card-run" style="display: none">
-					<!-- title -->
-					<div class="title">Run</div>
-						run
+				<div class="content card" id="card-run" style="display: block">
+					<div class="slim-div">
+    					<div class="row">
+    						<div class="col col-12 ">
+    							<div class="title">Běh</div>
+    						</div>
+    					</div>
+
+    					<div class="row">
+        					<div class="col col-12 border-line-v">
+        						<div class="content-items">
+        							<div class="item border-line-h active">
+        								<div class="date">2019</div>
+        								<div class="name">xxx</div>
+        							</div>
+        							<div class="item border-line-h active">
+        								<div class="date">2018</div>
+        								<div class="name">xxx</div>
+        							</div>
+        						</div>
+        					</div>
+    					</div>
 
 					</div>
 				</div>
-			</div>
 
 		</div>
+	</div>
 </div>
 {% endblock %}

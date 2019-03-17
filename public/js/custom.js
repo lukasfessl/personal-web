@@ -1,4 +1,3 @@
-
 $(function() {
 
 	$(".top-menu a").click(function() {
@@ -13,9 +12,16 @@ $(function() {
 	var page = document.URL.split("#");
 	if (page[1] == undefined) {
 		page = "about";
-		console.log("ds");
 	} else {
 		page = page[1];
 	}
 	$(".top-menu").find("#" + page).addClass("active");
+
+	$(".card-right").find(".card").hide();
+	$(".card-right").find("#card-" + page).show();
+
+
+	$('.slim-div').slimScroll({
+        height: '550px'
+    });
 });

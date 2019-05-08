@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Lukáš Fessl{% endblock %}</title>
+        <link rel="shortcut icon" href="{{ asset('img/favicon.png') }}" type="image/x-icon">
+		<link rel="stylesheet" href="{{ asset('css/admin.css') }}" />
+		<link rel="stylesheet" href="{{ asset('css/font-awesome.css') }}" />
+        {% block stylesheets %}{% endblock %}
+        {% block javascripts %}{% endblock %}
+    </head>
+    <body>
+    	<div class="nav">
+    		<a href="{{ path('logout') }}">Odhlásit</a>
+    	</div>
+
+    	<div class="left-nav">
+    		<ul>
+    			<li><a href="{{ path('app_admin_about') }}" class="nav-button">O mně</a></li>
+    			<li><a href="{{ path('app_admin_run') }}" class="nav-button">Běh</a></li>
+    		</ul>
+    	</div>
+
+    	<div class="page">
+    		<div class="content">
+                {% block content %}{% endblock %}
+            </div>
+        </div>
+    </body>
+</html>

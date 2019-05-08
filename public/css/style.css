@@ -107,6 +107,10 @@ ul {
     -webkit-transition: color 0.3s ease 0s;
 }
 
+.top-menu ul li a:focus {
+	outline: 0;
+}
+
 .top-menu .link {
 	display: block;
 	padding: 5px;
@@ -359,7 +363,7 @@ position: absolute;
 }
 
 .col-12 {
-	width: 93%;
+	width: 88%;
 }
 
 .row {
@@ -393,7 +397,7 @@ position: absolute;
 }
 
 .bot-space {
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 
 

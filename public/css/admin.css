@@ -1,0 +1,119 @@
+@font-face {
+	font-family: Amiko;
+	src: url(/font/Amiko-Regular.ttf);
+}
+
+body {
+	padding: 0px;
+	margin: 0px;
+    border: none;
+    font-family: 'Amiko', sans-serif;
+    font-size: 14px;
+    color: #626262;
+    letter-spacing: 0em;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    background-color: #eef5f9;
+}
+
+ul {
+	padding: 0px;
+	margin: 0px;
+	margin-top: 40px;
+}
+
+li {
+	list-style: none;
+}
+
+h4 {
+	padding: 0px;
+	margin: 0px;
+	display: inline;
+}
+
+.nav {
+	background-color: white;
+	padding: 10px;
+	text-align: right;
+}
+
+.left-nav {
+	width: 200px;
+    position: fixed;
+    background: #252b3b;
+    top: 0;
+    height: 100%;
+}
+
+.nav-button {
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+	display: block;
+	font-size: 15px;
+}
+
+.nav-button:hover {
+	text-decoration: underline;
+}
+
+.page {
+	position: relative;
+	margin-left: 200px;
+	padding: 10px;
+}
+
+.content {
+	border-radius: 5px;
+	background-color: white;
+	padding: 10px;
+}
+
+.card {
+	border: 1px solid black;
+	margin: 10px;
+}
+
+.card .head {
+	padding: 10px;
+}
+
+.card .body {
+	padding: 10px;
+}
+
+.f-r {
+	float: right;
+}
+
+.required:after {
+	content:" * ";
+	color: red;
+}
+
+.form-control {
+    display: block;
+    padding: .375rem .75rem;
+    font-size: .875rem;
+    line-height: 1.5;
+    color: #4F5467;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #7b8d9f;
+    border-radius: 2px;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+form input[type=text], form textarea {
+	width: 500px;
+}
+
+form textarea {
+	height: 200px;
+}
+
+.form-row, button{
+	margin: 10px;
+}

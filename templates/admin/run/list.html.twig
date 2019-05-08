@@ -1,0 +1,17 @@
+{% extends "admin_base.html.twig" %}
+
+{% block content %}
+
+{% for post in posts %}
+	<div class="card w-50">
+		<div class="head">
+			<h4>{{ post.name }}</h4>
+			<a href="{{ path('app_admin_editrun', {'id': post.id}) }}" class="f-r">Upravit</a>
+		</div>
+		<div class="body">
+	        {{ post.text|nl2br }}
+		</div>
+	</div>
+{% endfor %}
+
+{% endblock %}

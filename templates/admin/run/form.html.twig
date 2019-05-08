@@ -1,0 +1,11 @@
+{% extends "admin_base.html.twig" %}
+
+{% block content %}
+
+{% form_theme form 'form/fields.html.twig' %}
+    {{ form_start(form) }}
+        {{ form_row(form.name) }}
+        {{ form_row(form.text) }}
+    {{ form_end(form) }}
+
+{% endblock %}
